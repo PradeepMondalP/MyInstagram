@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 
 import com.example.myinstagram.home.MainActivity;
 import com.example.myinstagram.R;
+import com.example.myinstagram.profile.ProfileActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class BottomNavigationViewHelper {
@@ -34,8 +35,6 @@ public class BottomNavigationViewHelper {
                        Intent intent2 = new Intent(context , MainActivity.class);
                        Toast.makeText(context, "search act", Toast.LENGTH_SHORT).show();
                        context.startActivity(intent2);
-
-
                        break;
 
                    case R.id.id_ic_cirlce:  //activity num 2  (Share Activty)
@@ -51,7 +50,7 @@ public class BottomNavigationViewHelper {
                        break;
 
                    case R.id.id_ic_android:   //actvtiy num 4  (Profilr Activyt)
-                       Intent intent5 = new Intent(context , MainActivity.class);
+                       Intent intent5 = new Intent(context , ProfileActivity.class);
                        Toast.makeText(context, "prpofile act", Toast.LENGTH_SHORT).show();
                        context.startActivity(intent5);
                        break;
